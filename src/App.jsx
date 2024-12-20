@@ -1,13 +1,16 @@
-import './App.css'
-import Header from './component/Header'
+import "./App.css";
+import Header from "./component/Header";
+import Quiz from "./component/Quiz";
 
 function App() {
-
   return (
     <>
-    <Header />
+      <Header />
+      <main>
+        <Quiz />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
