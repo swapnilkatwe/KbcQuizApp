@@ -64,6 +64,37 @@ header h1 {
   text-align: center;
 }
 
+#question progress {
+  width: 50%;
+  height: 0.5rem;
+  border-radius: 24px;
+  background: #9e5ef8;
+  margin: 0;
+}
+
+#question progress::-webkit-progress-bar {
+  background: #6a558a;
+  border-radius: 24px;
+}
+
+#question progress::-webkit-progress-value {
+  background: #9e5ef8;
+  border-radius: 24px;
+}
+
+#question progress.answered {
+  background: #f8e59c;
+}
+
+#question progress.answered::-webkit-progress-value {
+  background: #f8e59c;
+}
+
+#question progress.answered::-webkit-progress-bar {
+  background: #6a558a;
+}
+
+
 #question h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
@@ -113,4 +144,37 @@ header h1 {
   /* background: linear-gradient(180deg, #fbda81 0%, #f8b173 100%); */
   background: #f5a76c;
   color: #2c203d;
+}
+
+#summary {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(180deg, #a17eda 0%, #895fc4 100%);
+  color: #191321;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.6);
+  animation: slide-in-from-bottom 0.7s ease-out;
+}
+
+#summary img {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+  border: 2px solid #3a2353;
+  border-radius: 50%;
+  background: #c18cfa;
+}
+
+#summary h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  color: #3a2353;
 }
